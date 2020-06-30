@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinerella</title>
+    <link rel="stylesheet" href="css/cinderella.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="Home.html">Home</a>
+      <a href="All.html">All Movies</a>
+      <a href="tel:009561878787"> Contact</a>
+      <img src="img/Disney.png" alt="Disney logo" class="disney" />
+
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <img src="img/cinerellabanner.jpeg" alt="" class="Cinderella-banner" width="1440"/>
+
+    <div class="wrapper1">
+      <div class="buy-area">
+        <div class="single-iteam">
+          <img src="img/cinderellabuy1.png" alt="" />
+          <ul>
+            <p class="buy-digital">
+              Buy Digital HD
+            </p>
+            <li>
+                Alternate Opening: Ella's Childhood
+              
+            </li>
+            <br>
+            <li>
+                Frozen Fever
+            </li>
+            <br />
+            <li>
+                Staging The Ball
+            </li>
+            <br />
+            <li>
+                Ella's Furry Friends
+            </li>
+            <br />
+     
+          </ul>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Buy</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a
+                href="https://itunes.apple.com/us/movie/cinderella-2015/id967532843"
+                target="_blank"
+                >iTunes</a
+              >
+              <a
+                href="https://www.vudu.com/content/movies/details/Cinderella-plus-bonus-features/655566"
+                target="_blank"
+                >Vudu</a
+              >
+              <a
+                href="https://play.google.com/store/movies/details/Cinderella_2015?id=UIYBoxiXsQw"
+                target="_blank"
+                >Google Play</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="single-iteam">
+          <img src="img/cinderellabuy2.png"  alt="" />
+          <ul>
+            <p class="buy-digital">
+                Blu-ray™ Combo Pack
+            </p>
+            <li>
+                Alternate Opening: Ella's Childhood
+
+            </li>
+            <br>
+            <li>
+                Frozen Fever
+            </li>
+            <br>
+            <li>
+                Staging The Ball
+            </li>
+            <br>
+            <li>
+                Ella's Furry Friends
+            </li>
+            <br>
+          </ul>
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Buy</button>
+            <div id="myDropdown" class="dropdown-content">
+             
+
+<a href="https://www.amazon.com/Cinderella-2-Disc-Blu-ray-DVD-Digital/dp/B00UI5CTE2/ref=sr_1_1?ie=UTF8&qid=1432859838&sr=8-1&keywords=Cinderella" target="_BLANK">Amazon</a>
+
+              <a
+                href="https://www.walmart.com/ip/Cinderella-2015-Blu-ray-DVD-Digital-HD/45497553"
+                target="_blank"
+                >Walmart</a>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+    <div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/20DF6U1HcGQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="wrapper4">
+<div class="story-area">
+    <div class="story">
+        <img src="img/cinderella.png" width="350px" height="500px" alt="">
+              </div>
+              <div class="story">
+               <ul style="list-style-type:none;">
+<p class="Cinderella-title">Cinderella</p>
+<li>
+    PG | 1h 45min | Drama, Family, Fantasy | 13 March 2015 (USA) <br>
+  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+  <br>
+  <br>
+  The story of Cinderella follows the fortunes of young Ella whose merchant father    <br>
+  remarries following the death of her mother. Eager to support her loving   <br> 
+  father, Ella welcomes her new stepmother and her step daughters    <br>
+  Anastasia and Drisella into the family home. But, when Ella's father  unexpectedly <br> passes away,    
+  she finds herself at the mercy of a jealous and cruel new family.   <br> 
+</li>
+
+               </ul>
+                      </div>
+</div>
+        
+      </div>
+     
+<br>
+<br>
+<br>
+      <footer class="footer">
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          , Disney Kuwait
+        </p>
+      </footer>
+
+
+    <!-- DropDown -->
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>

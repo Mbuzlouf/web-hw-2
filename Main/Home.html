@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disney Kuwait</title>
+    <link rel="stylesheet" href="css/Home.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+
+      <a href="All.html">All Movies</a>
+      <a href="tel:009561878787"> Contact</a>
+      <img src="img/Disney.png" alt="Disney logo" width="150" class="disney" />
+
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+
+        <a href="Frozen2.html">
+          <img src="img/Frozen 2-1.jpeg" style="width: 100%;" />
+        </a>
+
+        <div class="text">
+          <div>
+            <p class="Tittle">FROZEN 2</p>
+          </div>
+          <br />
+          <p class="para">
+            CKristoff, Olaf, Elsa and Anna ride in a wagon pulled by Sven with
+            Elsa's ice palace in the distance.
+          </p>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <a href="Maleficent.html">
+          <img src="img/Maleficent 1 .jpeg" style="width: 100%;" />
+        </a>
+        <div class="text">
+          <p class="para">Angelina Jolie and Elle Fanning in</p>
+          <p class="Tittle">Maleficent: Mistress of Evil</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+
+        <a href="cinderella.html">
+          <img src="img/cinderella2.jpg" style="width: 100%;" />
+        </a>
+
+        <div class="text">
+          <p class="para">Lily James and Richard Madden in</p>
+          <p class="Tittle">Cinderella</p>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          Sign up for FREE!
+          <span></span><span></span><span></span><span></span>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="wrapper1">
+      <h1>
+        More Disney movies!
+      </h1>
+      <div class="More-Movies-area">
+        <div class="single-movie">
+          <a href="cars3.html">
+            <img src="img/cars3.jpg" alt="Cars3" width="355px" height="530px" />
+          </a>
+        </div>
+        <div class="single-movie">
+          <img
+            src="img/toy-story-4.jpg"
+            alt="Toy Story 4"
+            width="355px"
+            height="530px"
+          />
+        </div>
+        <div class="single-movie">
+          <a href="cinderella.html">
+            <img
+              src="img/cinderella.png"
+              alt="cinderella"
+              width="355px"
+              height="530px"
+            />
+          </a>
+        </div>
+        <div class="single-movie">
+          <a href="frozen.html">
+            <img
+              src="img/frozen1.jpg"
+              alt="Frozen1"
+              width="355px"
+              height="530px"
+            />
+          </a>
+        </div>
+
+        <a href="All.html">
+          <div class="show-all">
+            View all
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="wrapper2">
+      <div class="Menue-area">
+        <a href="All.html">
+          <div class="Single-choise">
+            <p class="choise" style="text-decoration: none;">All Movies</p>
+          </div>
+        </a>
+
+        <a href="tel:009651878787">
+          <div class="Single-choise">
+            <p class="choise">Contact</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="image-area">
+        <div class="single-image">
+          <a href="https://www.instagram.com/mbuzlouf/" target="_blank"
+            ><img src="img/instagram.png" alt="instagram" width="105"
+          /></a>
+        </div>
+        <div class="single-image">
+          <a href="https://twitter.com/mbuzlouf" target="_blank"
+            ><img src="img/Twitter.png" alt="Twitter" width="100"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer class="footer">
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        , Disney Kuwait
+      </p>
+    </footer>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>
